@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://agapomen.org/sitemap.xml
