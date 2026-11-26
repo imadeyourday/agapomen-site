@@ -131,6 +131,13 @@ footer{border-top:1px solid var(--rule-dark);padding:28px 0 52px;display:flex;ju
 @media(max-width:700px){.correct-hero{padding:48px 0}.correct-grid{grid-template-columns:1fr;gap:20px}.correct-aside{max-width:580px}.correction-summary{grid-template-columns:1fr;gap:16px}}
 @media(max-width:410px){.correct-hero h1{font-size:clamp(55px,12vw,76px)}.nav{gap:10px;font-size:10px}.wordmark{font-size:18px}}
 
+
+/* Keep all navigation destinations readable and easy to tap. */
+header{flex-wrap:wrap}
+.head-side{min-width:0;max-width:100%;flex-wrap:wrap}
+.nav{font-size:.875rem;flex-wrap:wrap;gap:.25rem 1rem}
+.nav a{display:inline-flex;align-items:center;min-height:2.75rem;white-space:nowrap}
+@media(max-width:700px){.head-side{width:100%}}
 </style>
   <title>Agapomen’s correction record — When the work changes</title>
   <meta name="description" content="Agapomen’s public correction record: what we checked, what changed, and what remains unknown. Read the evidence and limits behind our revisions.">
@@ -160,7 +167,7 @@ footer{border-top:1px solid var(--rule-dark);padding:28px 0 52px;display:flex;ju
   <a href="index.html" class="wordmark" aria-label="Agapomen, homepage">AGAPOMEN</a>
   <div class="head-side">
     <span class="utility issue">An unfinished work · The record</span>
-    <nav class="nav" aria-label="Sections"><a href="note-001.html">First note</a><a href="note-002.html">Truth</a><a href="note-003.html">Service</a><a href="#entries">The record</a></nav>
+    <nav class="nav" aria-label="Sections"><a href="https://bible.agapomen.org/#home">Living Bible</a><a href="note-001.html">First note</a><a href="note-002.html">Truth</a><a href="note-003.html">Service</a><a href="#entries">The record</a></nav>
   </div>
 </header>
 <main id="content">

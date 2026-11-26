@@ -111,6 +111,13 @@ footer{border-top:1px solid var(--rule-dark);padding:28px 0 52px;display:flex;ju
 
 /* Readable navigation for the first reflection. */
 .nav{font-size:.875rem;flex-wrap:wrap;gap:.5rem 1.2rem}.nav a{display:inline-flex;align-items:center;min-height:2.75rem}.head-side{max-width:100%}.entry-small,.foottext,.margin-note .tiny{font-size:.875rem}
+
+/* Keep all navigation destinations readable and easy to tap. */
+header{flex-wrap:wrap}
+.head-side{min-width:0;max-width:100%;flex-wrap:wrap}
+.nav{font-size:.875rem;flex-wrap:wrap;gap:.25rem 1rem}
+.nav a{display:inline-flex;align-items:center;min-height:2.75rem;white-space:nowrap}
+@media(max-width:700px){.head-side{width:100%}}
 </style>
   <title>Before the reply: A practice of listening — Agapomen</title>
   <meta name="description" content="Offer your attention before preparing an answer. An original Agapomen reflection with four small practices for listening and responding truthfully.">
@@ -138,7 +145,7 @@ footer{border-top:1px solid var(--rule-dark);padding:28px 0 52px;display:flex;ju
 <div class="sheet" id="top">
 <header>
   <a href="index.html" class="wordmark" aria-label="Agapomen, home">AGAPOMEN</a>
-  <div class="head-side"><nav class="nav" aria-label="Sections"><a href="index.html#practice">All reflections</a><a href="note-002.html">Truth</a><a href="note-003.html">Service</a><a href="corrections.html">Corrections</a></nav></div>
+  <div class="head-side"><nav class="nav" aria-label="Sections"><a href="https://bible.agapomen.org/#home">Living Bible</a><a href="index.html#practice">All reflections</a><a href="note-002.html">Truth</a><a href="note-003.html">Service</a><a href="corrections.html">Corrections</a></nav></div>
 </header>
 <main id="content">
   <section class="note-hero" aria-labelledby="note-title">
