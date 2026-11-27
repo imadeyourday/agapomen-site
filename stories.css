@@ -1,0 +1,42 @@
+:root {
+  color-scheme: light;
+  --paper: #f8f4ec;
+  --ink: #30291f;
+  --muted: #6b6056;
+  --rust: #8c4632;
+  --line: #d7cdbf;
+  --serif: Georgia, "Times New Roman", serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--paper); font: 1rem/1.6 system-ui, sans-serif; }
+a { color: inherit; text-underline-offset: .25em; text-decoration-thickness: 1px; }
+a:focus-visible { outline: 3px solid var(--rust); outline-offset: 4px; }
+.skip { position: absolute; top: -8rem; left: 1rem; padding: .75rem; color: var(--paper); background: var(--ink); }
+.skip:focus { top: .75rem; }
+.shell { max-width: 75rem; margin: auto; padding-inline: clamp(1.25rem, 4vw, 3rem); }
+.masthead, .more { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .25rem 1.5rem; }
+.masthead { min-height: 6.3rem; padding-block: .7rem; border-bottom: 1px solid var(--line); }
+.masthead nav { display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; }
+.masthead a, .more a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+.masthead a { text-decoration: none; }
+.masthead a:hover, .section-name a:hover { text-decoration: underline; }
+.wordmark { gap: .6rem; font: 1.6rem/1 var(--serif); }
+main { max-width: 39rem; margin: 0 auto; }
+article { padding: clamp(2.5rem, 7vw, 5.5rem) 0 clamp(2rem, 5vw, 3.75rem); }
+.section-name { margin: 0 0 .8rem; color: var(--rust); font-size: .875rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
+.section-name a { text-decoration: none; }
+h1 { margin: 0; font: 400 clamp(2.9rem, 7vw, 5.5rem)/1.04 var(--serif); letter-spacing: -.045em; text-wrap: balance; }
+.byline { margin: 1rem 0 0; font-size: .9375rem; color: var(--muted); }
+.narrative { margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid var(--line); }
+.narrative p { margin: 0 0 1.1em; font: clamp(1.18rem, 2vw, 1.42rem)/1.65 var(--serif); }
+.narrative p:last-child { margin: 1.25em 0 0; }
+.more { border-top: 1px solid var(--line); padding: 1rem 0 2rem; }
+.more a { gap: .5rem; color: var(--rust); }
+footer { border-top: 1px solid var(--line); padding: 1.5rem 0 2rem; color: var(--muted); font-size: .875rem; }
+footer a { display: inline-block; margin-inline-start: .4rem; }
+@media (max-width: 34rem) {
+  .masthead { align-items: flex-start; flex-direction: column; gap: .1rem; }
+  .wordmark { font-size: 1.4rem; }
+  .wordmark img { width: 34px; height: 34px; }
+  .masthead nav { gap: 1.25rem; }
+}

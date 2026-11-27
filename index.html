@@ -68,6 +68,13 @@
     @media(max-width:360px){.shell{width:calc(100% - 2rem)}.header{gap:.5rem;flex-wrap:wrap;align-content:center;padding:.8rem 0}.nav{gap:1rem}.hero h1 span{display:block}.hero h1 span + span:before{content:none}.hero h1{font-size:5rem}.button{padding-inline:1.2rem}.eyebrow{font-size:.875rem;letter-spacing:.03em}}
     @media(max-width:560px){.header{flex-direction:column;align-items:flex-start;gap:.25rem;padding:.9rem 0 .5rem}.nav{width:100%;justify-content:space-between;gap:.5rem}.bible-entry{grid-template-columns:1fr;gap:1.25rem;padding:2rem 0}.bible-entry .button{justify-self:start}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+    .stories{border-top:1px solid var(--line);padding:2.3rem 0 3rem}
+    .stories ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 3rem;margin:1.4rem 0 0;padding:0;list-style:none}
+    .stories a{display:block;text-decoration:none;padding:.9rem 0;border-top:1px solid var(--line)}
+    .stories strong{display:block;color:var(--rust);font:normal 1.65rem/1.25 var(--serif);margin-bottom:.5rem}
+    .stories a:hover strong,.stories a:focus-visible strong{text-decoration:underline}
+    .stories span{display:block;max-width:31rem;color:var(--muted)}
+    @media(max-width:560px){.stories ul{grid-template-columns:1fr;gap:.3rem}.stories{padding:1.8rem 0 2rem}}
   </style>
   <title>Agapomen — Let us love | Reflections for everyday life</title>
   <meta name="description" content="Let us love. Small practices in attention, truth, and service for the ordinary moments that make a life. Original reflections, offered freely.">
@@ -108,7 +115,7 @@
   <div class="shell" id="top">
     <header class="header">
       <a class="wordmark" href="#top" aria-label="Agapomen, home"><img class="brand-mark" src="assets/agapomen-mark-128.png?v=2" width="42" height="42" alt="">Agapomen</a>
-      <nav class="nav" aria-label="Main navigation"><a href="https://bible.agapomen.org/#home">Living Bible</a><a href="#practice">Reflections</a><a href="#about">About</a></nav>
+      <nav class="nav" aria-label="Main navigation"><a href="https://bible.agapomen.org/#home">Living Bible</a><a href="#practice">Reflections</a><a href="#stories">Stories</a><a href="#about">About</a></nav>
     </header>
     <main id="content">
       <section class="hero" aria-labelledby="hero-title">
@@ -156,6 +163,13 @@
             <a class="read-link" href="note-003.html" aria-label="Read the reflection: The next small good">Read the reflection</a>
           </article>
         </div>
+      </section>
+      <section class="stories" id="stories" aria-labelledby="stories-title">
+        <h2 id="stories-title">Stories</h2>
+        <ul>
+            <li><a href="i-picked-jupiter.html"><strong>I picked Jupiter.</strong><span>When I couldn’t picture the planet, I could still come back to the word.</span></a></li>
+            <li><a href="five-minutes-in.html"><strong>Five minutes in.</strong><span>I got the hot tub running. Five minutes later, one of the pumps was leaking.</span></a></li>
+        </ul>
       </section>
       <section class="purpose" id="about" aria-labelledby="purpose-title">
         <h2 id="purpose-title"><span>Love everyone.</span><span>Serve everyone.</span><span>Tell the truth.</span></h2>
